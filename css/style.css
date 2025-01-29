@@ -6,5 +6,110 @@ section {
 
 article {
   background-color: darkgrey;
-  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* PRODUCT LIST SIDEN */
+
+.product_list_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.product_card {
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.product_card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+}
+
+.discount {
+  color: red;
+}
+
+.old_price {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.sold_out_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.discount_badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* PRODUCT SIDEN */
+.product_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  /* max-width: 800px; */
+  margin: auto;
+}
+.product_image img {
+  max-width: 50vw;
+  width: 100%;
+  border-radius: 10px;
+}
+/* .product_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} */
+
+/* Responsivt design: På større skærme vises i en række */
+@media (min-width: 768px) {
+  .product_container {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
 }
