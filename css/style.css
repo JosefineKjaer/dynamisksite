@@ -96,7 +96,6 @@ body {
   margin: auto;
 }
 .product_image img {
-  max-width: 50vw;
   width: 100%;
   border-radius: 10px;
 }
