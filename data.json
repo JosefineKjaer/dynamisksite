@@ -1,0 +1,35 @@
+{
+  "student 1": {
+    "navne": {
+      "fornavn": "Josefine",
+      "mellemnavn": "Yolanda",
+      "efternavn": "Mullings Kjær"
+    },
+
+    "alder": 24,
+    "studerende": true,
+    "interesser": ["droppe ud", "rejser"],
+    "adresse": {
+      "vej": "Falkevej 4",
+      "by": "København NV",
+      "postnummer": "2400"
+    },
+    "fødselsdato": "2000-10-15"
+  },
+
+  "student 2": {
+    "navne": {
+      "fornavn": "Frida",
+      "efternavn": "Frederiksen"
+    },
+    "alder": 24,
+    "studerende": true,
+    "interesser": ["rejse", "pizza"],
+    "adresse": {
+      "vej": "landfogedvej 1, 2th",
+      "by": "København NV",
+      "postnummer": 2400
+    },
+    "fødselsdato": "2000-05-09"
+  }
+}
