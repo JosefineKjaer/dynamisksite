@@ -1,6 +1,12 @@
+const myCategory = new URLSearchParams(window.location.search).get("category");
+
 const listContainer = document.querySelector(".product_list_container");
 
-fetch(`https://kea-alt-del.dk/t7/api/products/`)
+let overskrift = document.querySelector("h2");
+
+overskrift.innerHTML = myCategory;
+
+fetch(`https://kea-alt-del.dk/t7/api/products?category=${myCategory}`)
   .then((response) => response.json())
   .then(showList);
 
