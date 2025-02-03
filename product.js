@@ -1,4 +1,4 @@
-let productId = 1165;
+const myCategory = new URLSearchParams(window.location.search).get("id");
 let productContainer = document.querySelector(".product_container");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
